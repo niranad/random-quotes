@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/random-quote/static/css/main.9918c745.chunk.css",
-    "main.js": "/random-quote/static/js/main.1be730a6.chunk.js",
-    "main.js.map": "/random-quote/static/js/main.1be730a6.chunk.js.map",
-    "runtime-main.js": "/random-quote/static/js/runtime-main.5436e20e.js",
-    "runtime-main.js.map": "/random-quote/static/js/runtime-main.5436e20e.js.map",
-    "static/css/2.714748a2.chunk.css": "/random-quote/static/css/2.714748a2.chunk.css",
-    "static/js/2.e802301d.chunk.js": "/random-quote/static/js/2.e802301d.chunk.js",
-    "static/js/2.e802301d.chunk.js.map": "/random-quote/static/js/2.e802301d.chunk.js.map",
-    "index.html": "/random-quote/index.html",
-    "static/css/2.714748a2.chunk.css.map": "/random-quote/static/css/2.714748a2.chunk.css.map",
-    "static/css/main.9918c745.chunk.css.map": "/random-quote/static/css/main.9918c745.chunk.css.map",
-    "static/js/2.e802301d.chunk.js.LICENSE.txt": "/random-quote/static/js/2.e802301d.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/random-quote/static/media/fontawesome-webfont.f691f37e.woff"
+    "main.css": "/random-quotes/static/css/main.9918c745.chunk.css",
+    "main.js": "/random-quotes/static/js/main.1be730a6.chunk.js",
+    "main.js.map": "/random-quotes/static/js/main.1be730a6.chunk.js.map",
+    "runtime-main.js": "/random-quotes/static/js/runtime-main.7c877445.js",
+    "runtime-main.js.map": "/random-quotes/static/js/runtime-main.7c877445.js.map",
+    "static/css/2.dcb8ce12.chunk.css": "/random-quotes/static/css/2.dcb8ce12.chunk.css",
+    "static/js/2.e802301d.chunk.js": "/random-quotes/static/js/2.e802301d.chunk.js",
+    "static/js/2.e802301d.chunk.js.map": "/random-quotes/static/js/2.e802301d.chunk.js.map",
+    "index.html": "/random-quotes/index.html",
+    "static/css/2.dcb8ce12.chunk.css.map": "/random-quotes/static/css/2.dcb8ce12.chunk.css.map",
+    "static/css/main.9918c745.chunk.css.map": "/random-quotes/static/css/main.9918c745.chunk.css.map",
+    "static/js/2.e802301d.chunk.js.LICENSE.txt": "/random-quotes/static/js/2.e802301d.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/random-quotes/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.5436e20e.js",
-    "static/css/2.714748a2.chunk.css",
+    "static/js/runtime-main.7c877445.js",
+    "static/css/2.dcb8ce12.chunk.css",
     "static/js/2.e802301d.chunk.js",
     "static/css/main.9918c745.chunk.css",
     "static/js/main.1be730a6.chunk.js"
