@@ -32,6 +32,7 @@ class App extends Component {
   render() {
     const {
       quote,
+      isDuplicate,
       isPending,
       onQuoteRequest,
       error,
@@ -46,7 +47,13 @@ class App extends Component {
 
     const errMessage = `${error.message}: Please check your internet connection and refresh the page.`;
 
+    // change body background color as the textColor changes
     document.body.style.backgroundColor = textColor;
+
+    // if the fetched quote has been previously fetched, trigger another fetch
+    if (isDuplicate) {
+      document.getElementById('next-quote').click();
+    }
 
     return (
       <div
@@ -67,7 +74,7 @@ class App extends Component {
             {error === '' && (
               <div id='buttons'>
                 <button
-                  id='new-quote'
+                  id='next-quote'
                   className='btn btn-default'
                   style={!isPending ? styles : { width: 50, height: 40 }}
                   onClick={onQuoteRequest}
