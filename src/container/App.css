@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 
-#quote-text {
+#text {
   display: block;
   text-align: center;
   font-size: 28px;
@@ -119,7 +119,7 @@ a {
     width: 74%;
   }
 
-  #quote-text {
+  #text {
     font-size: 25px;
   }
 
@@ -133,7 +133,7 @@ a {
     width: 88%;
   }
 
-  #quote-text {
+  #text {
     font-size: 20px;
   }
 

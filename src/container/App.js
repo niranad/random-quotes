@@ -65,7 +65,7 @@ class App extends Component {
           <div id='icon' className='container-fluid loader center'></div>
         ) : (
           <div id='quote-box' className='center'>
-            <q id='quote-text' style={{ color: textColor }}>
+            <q id='text' style={{ color: textColor }}>
               {error === '' ? quote['content'] : errMessage}
             </q>
             <p id='quote-author' style={{ color: textColor }}>
