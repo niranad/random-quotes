@@ -74,7 +74,7 @@ class App extends Component {
             {error === '' && (
               <div id='buttons'>
                 <button
-                  id='next-quote'
+                  id='new-quote'
                   className='btn btn-default'
                   style={!isPending ? styles : { width: 50, height: 40 }}
                   onClick={onQuoteRequest}
