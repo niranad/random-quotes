@@ -1,4 +1,4 @@
-export const colors = [
+const colors = [
 	"aliceblue", "azure", "aqua", "antiquewhite","aquamarine", "bisque", "blanchedalmond", "blueviolet", 
 	"burlywood", "cadetblue","chartreuse", "coral", "cornflowerblue", "cornsilk", 
 	"cyan", "darkslateblue", "darkslategray", "darkcyan", "darkgoldenrod", 
@@ -18,3 +18,5 @@ export const colors = [
 	"springgreen", "steelblue", "tan", "teal", "thistle", "tomato", "turquoise", "violet", "wheat",
 	"yellow", "yellowgreen"
 	];
+
+	export default colors;

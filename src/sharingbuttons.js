@@ -10,25 +10,25 @@ const buttonStyle = {
 }
 
 export const SharingButtons = ({ quote , author }) => {
-	const url = "https://codepen.io/niranad/full/RwpGEGM";
-	const shareText = quote + " -" + author;
-	const tumblr = {
-		title: "A favorite quote",
-		caption: shareText,
-		content: url
-	}
+	const url = 'https://niranad.github.io/random-quotes';
 
 	return (
-		<div>
-			<Twitter id="tweet-quote" url={url} shareText={shareText} />
-			<Facebook url={url} />
-			<Tumblr 
-				style={buttonStyle} url={url} title={tumblr.title} 
-				caption={tumblr.caption} content={tumblr.content}
-			/>
-		</div>	
-	);
+    <div>
+      <Twitter id='tweet-quote' url={url} shareText={quote + ' -' + author} />
+      <Facebook url={url} />
+      <Tumblr
+        style={buttonStyle}
+        url={url}
+        title='Quote of the day!'
+        caption={quote}
+        content={`A favorite quote by ${author}`}
+      />
+    </div>
+  );
 }
 
-SharingButtons.defaultProps = { quote: "With wisdom is understanding." };
+SharingButtons.defaultProps = {
+  quote: 'With wisdom is understanding.',
+  author: 'God',
+};
 SharingButtons.propTypes = { quote: PropTypes.string.isRequired };
