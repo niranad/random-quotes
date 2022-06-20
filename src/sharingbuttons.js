@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Facebook from 'react-sharingbuttons/dist/buttons/Facebook';
-import Tumblr from 'react-sharingbuttons/dist/buttons/Tumblr';
-import Twitter from 'react-sharingbuttons/dist/buttons/Twitter';
+import { Facebook, Tumblr, Twitter } from 'react-sharingbuttons';
 
 const buttonStyle = {
-	width: 15,
-	padding: 5
-}
+  width: 15,
+  padding: 5,
+};
 
-export const SharingButtons = ({ quote , author }) => {
-	const url = 'https://niranad.github.io/random-quotes';
+export const SharingButtons = ({ quote, author }) => {
+  const url = 'https://niranad.github.io/random-quotes';
 
-	return (
+  return (
     <div>
       <Twitter id='tweet-quote' url={url} shareText={quote + ' -' + author} />
       <Facebook url={url} />
@@ -25,7 +23,7 @@ export const SharingButtons = ({ quote , author }) => {
       />
     </div>
   );
-}
+};
 
 SharingButtons.defaultProps = {
   quote: 'With wisdom is understanding.',

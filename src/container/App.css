@@ -58,6 +58,11 @@ a {
   outline: none;
 }
 
+.react-sharing-button--twitter .react-sharing-button__text:hover,
+.react-sharing-button--facebook .react-sharing-button__text:hover,
+.react-sharing-button--tumblr .react-sharing-button__text:hover {
+  color: rgb(123, 171, 211);
+}
 
 .btn {
   font-size: 20px;
@@ -69,7 +74,7 @@ a {
 }
 
 .btn:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .link {
@@ -113,17 +118,13 @@ a {
   #quote-box {
     width: 74%;
   }
-  
+
   #quote-text {
-    font-size: 25px
+    font-size: 25px;
   }
 
   #quote-author {
     font: 20px;
-  }
-
-  .btn {
-    font-size: 18px
   }
 }
 
@@ -138,9 +139,5 @@ a {
 
   #quote-author {
     font-size: 16px;
-  }
-
-  .btn {
-    font-size: 14px;
   }
 }
