@@ -19,7 +19,7 @@ A [Reactjs](https://reactjs.org) dynamic random quote page that fetches random q
 
 ## Link
 
-This project with all tests passing is live with Github pages at [random-quotes](https://niranad.github.io/random-quotes). **If you are using Google Chrome, you may see a warning red screen with _Deceptive site ahead_ message indicating the site is _dangerous_. Please note that this is not true as Google Chrome cannot accurately discern a website with no backend logic such as a Github page from phishing attacks. Just ignore and click the _Details_ button, then click _visit this unsafe site_ to see the project.** Specified tests can be run against the project on this [codepen](https://codepen.io/niranad/full/RwpGEGM)
+This project with all tests passing is live with Github pages at [random-quotes](https://niranad.github.io/random-quotes). **If you are using Google Chrome, you may see a warning red screen with _Deceptive site ahead_ message indicating the site is _dangerous_. Please note that this is not true as Google Chrome cannot accurately discern a website with no backend logic such as a Github page from phishing attacks. Just ignore and click the _Details_ button, then click _visit this unsafe site_ to see the project.** Specified tests can be run against the project on this [codepen](https://codepen.io/niranad/full/RwpGEGM).
 
 ## Origin
 
