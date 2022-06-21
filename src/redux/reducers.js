@@ -50,6 +50,10 @@ export const quoteReducer = (state = initialQuoteState, action = {}) => {
     case QUOTE_REQUEST_FAILED:
       return Object.assign({}, state, {
         error: action.payload,
+        quote: Object.assign({}, state.quote, {
+          content: action.payload.message,
+          author: 'Error',
+        }),
         isPending: false,
       });
     case GET_PREVIOUS_QUOTE:
@@ -58,6 +62,7 @@ export const quoteReducer = (state = initialQuoteState, action = {}) => {
         prevQuoteIdx: idx,
         quote: state.quotes[idx],
         textColor: state.prevTextColors[idx],
+        error: '',
       });
     default:
       return state;

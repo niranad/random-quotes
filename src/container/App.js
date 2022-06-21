@@ -45,22 +45,18 @@ class App extends Component {
       color: 'black',
     };
 
-    const errMessage = `${error.message}: Please check your internet connection and refresh the page.`;
+    const errMessage = `${error.message}: Please check your internet connection and try again.`;
 
     // set body background color to the textColor in state
     document.body.style.backgroundColor = textColor;
 
     // if the fetched quote has been previously fetched, trigger another fetch
     if (isDuplicate) {
-      document.getElementById('next-quote').click();
+      document.getElementById('new-quote').click();
     }
 
     return (
-      <div
-        id='container'
-        className=''
-        style={{ backgroundColor: textColor }}
-      >
+      <div id='container' className='' style={{ backgroundColor: textColor }}>
         {Object.keys(quote).length === 0 ? (
           <div id='icon' className='loader center'></div>
         ) : (
@@ -73,32 +69,40 @@ class App extends Component {
             <p id='author' style={{ color: textColor }}>
               -{error === '' ? quote['author'] : 'Error'}
             </p>
-            {error === '' && (
-              <div id='buttons'>
-                <button
-                  id='new-quote'
-                  className='btn btn-default'
-                  style={!isPending ? styles : { width: 50, height: 40 }}
-                  onClick={onQuoteRequest}
-                  disabled={isPending}
-                >
-                  {isPending ? <div className='loader' /> : 'Next quote'}
-                </button>
-                <button
-                  id='previous-quote'
-                  className='btn btn-default'
-                  style={styles}
-                  onClick={onGetPreviousQuote}
-                  disabled={isPending}
-                >
-                  Previous quote
-                </button>
+
+            <div id='buttons'>
+              <button
+                id='new-quote'
+                className='btn btn-default'
+                style={!isPending ? styles : { width: 40, height: 34 }}
+                onClick={onQuoteRequest}
+                disabled={isPending}
+              >
+                {isPending ? (
+                  <div
+                    className='loader'
+                    style={{ borderTop: '2px solid #3498db' }}
+                  />
+                ) : (
+                  'Next quote'
+                )}
+              </button>
+              <button
+                id='previous-quote'
+                className='btn btn-default'
+                style={styles}
+                onClick={onGetPreviousQuote}
+                disabled={isPending}
+              >
+                Previous quote
+              </button>
+              {error === '' && (
                 <SharingButtons
                   quote={quote['content']}
                   author={quote['author']}
                 />
-              </div>
-            )}
+              )}
+            </div>
           </div>
         )}
         <Footer />
@@ -110,4 +114,5 @@ class App extends Component {
 const Container = connect(mapStateToProps, mapDispatchToProps)(App);
 
 export default Container;
+
 
