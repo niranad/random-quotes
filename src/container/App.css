@@ -9,8 +9,9 @@
 #icon {
   width: 120px;
   height: 120px;
-  top: 40%;
-  left: 45%;
+  top: 38%;
+  left: 42%;
+  padding: 0;
 }
 
 .center {
@@ -21,8 +22,8 @@
 }
 
 #quote-box {
-  width: 60%;
-  max-height: 80%;
+  max-width: 70%;
+  max-height: 75%;
   padding: 20px;
   border: 2px solid mintcream;
   border-radius: 6px;
@@ -31,21 +32,33 @@
   overflow: auto;
 }
 
+.fa-quote-left {
+  font-size: 37px;
+  padding-right: 15px;
+  display: inline;
+}
+
 a {
   text-decoration: none;
 }
 
+q {
+  quotes: none;
+}
+
 #text {
-  display: block;
+  display: inline;
   text-align: center;
   font-size: 28px;
   font-family: 'Merienda';
 }
 
-#quote-author {
+#author {
   font-size: 22px;
   font-family: Arial;
   text-align: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 #new-quote,
@@ -65,7 +78,6 @@ a {
 }
 
 .btn {
-  font-size: 20px;
   font-weight: 600;
   padding: 5px;
   margin-right: 6px;
@@ -123,21 +135,38 @@ a {
     font-size: 25px;
   }
 
-  #quote-author {
+  #author {
     font: 20px;
+  }
+
+  .react-sharing-button__link {
+    font-size: 15px;
   }
 }
 
-@media only sreen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   #quote-box {
     width: 88%;
   }
 
   #text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  #quote-author {
+  #author {
     font-size: 16px;
   }
+
+  #new-quote, #previous-quote {
+    font-size: 12px;
+  }
+
+  .fa-quote-left {
+    font-size: 30px;
+  }
+
+  .react-sharing-button__link {
+    font-size: 12px;
+  }
 }
+

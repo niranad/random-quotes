@@ -1,11 +1,26 @@
 export const Footer = () => {
   return (
     <div id='footer'>
-      All quotes are fetched from{' '}
-      <a className='link' href='api.quotable.io/random'>
+      Quotes are fetched from{' '}
+      <a
+        className='link'
+        href='https://github.com/lukePeavey/quotable'
+        target='_blank'
+        rel='noopener noreferrer'
+        title='lukePeavy/Quotable API'
+      >
         Quotable
       </a>{' '}
-      API created by <strong>lukePeavy</strong>.
+      a random quotes API. Quote icon logo created by{' '}
+      <a
+        className='link'
+        href='https://www.flaticon.com/free-icons/quote'
+        title='quote icons'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Freepik - Flaticon
+      </a>
     </div>
   );
 };

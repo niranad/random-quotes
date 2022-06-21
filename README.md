@@ -14,7 +14,7 @@ A [Reactjs](https://reactjs.org) dynamic random quote page that fetches random q
 
 - Data fetching from an API
 - State management with Redux
-- Social media share
+- Social media share buttons (twitter, facebook, tumblr)
 - Temporarily caching fetched data (quotes) to later retrieval.
 
 ## Link

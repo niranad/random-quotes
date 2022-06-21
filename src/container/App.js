@@ -47,7 +47,7 @@ class App extends Component {
 
     const errMessage = `${error.message}: Please check your internet connection and refresh the page.`;
 
-    // change body background color as the textColor changes
+    // set body background color to the textColor in state
     document.body.style.backgroundColor = textColor;
 
     // if the fetched quote has been previously fetched, trigger another fetch
@@ -58,17 +58,19 @@ class App extends Component {
     return (
       <div
         id='container'
-        className='container-fluid'
+        className=''
         style={{ backgroundColor: textColor }}
       >
         {Object.keys(quote).length === 0 ? (
-          <div id='icon' className='container-fluid loader center'></div>
+          <div id='icon' className='loader center'></div>
         ) : (
           <div id='quote-box' className='center'>
+            <i className='fas fa-quote-left' style={{ color: textColor }} />
+            {'    '}
             <q id='text' style={{ color: textColor }}>
               {error === '' ? quote['content'] : errMessage}
             </q>
-            <p id='quote-author' style={{ color: textColor }}>
+            <p id='author' style={{ color: textColor }}>
               -{error === '' ? quote['author'] : 'Error'}
             </p>
             {error === '' && (
