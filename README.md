@@ -23,4 +23,4 @@ This project with all tests passing is live with Github pages at [random-quotes]
 
 ## Origin
 
-The project is one of the five (5) Freecodecamp's Front End Development Libraries 300 course work and its objectives are stated at [Build a Random Quote Machine](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine).
+The project is one of the five (5) Freecodecamp's Front End Development Libraries 300 hours course work and its objectives are stated at [Build a Random Quote Machine](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine).
