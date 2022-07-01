@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-class App extends Component {
+class QuoteMachine extends Component {
   componentDidMount() {
     this.props.onQuoteRequest();
   }
@@ -56,9 +56,9 @@ class App extends Component {
     }
 
     return (
-      <div id='container' className='' style={{ backgroundColor: textColor }}>
+      <div id='container' className='App' style={{ backgroundColor: textColor }}>
         {Object.keys(quote).length === 0 ? (
-          <div id='icon' className='loader center'></div>
+          <div id='icon' className='loader center' />
         ) : (
           <div id='quote-box' className='center'>
             <i className='fas fa-quote-left' style={{ color: textColor }} />
@@ -111,7 +111,7 @@ class App extends Component {
   }
 }
 
-const Container = connect(mapStateToProps, mapDispatchToProps)(App);
+const Container = connect(mapStateToProps, mapDispatchToProps)(QuoteMachine);
 
 export default Container;
 
