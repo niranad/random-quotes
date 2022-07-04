@@ -8,7 +8,7 @@ const buttonStyle = {
 };
 
 export const SharingButtons = ({ quote, author }) => {
-  const url = 'https://niranad.github.io/random-quotes';
+  const url = 'https://random-quotes-app-96b57.web.app';
 
   return (
     <div>

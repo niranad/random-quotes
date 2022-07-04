@@ -73,8 +73,8 @@ class QuoteMachine extends Component {
             <div id='buttons'>
               <button
                 id='new-quote'
-                className='btn btn-default'
-                style={!isPending ? styles : { width: 40, height: 34 }}
+                className='btn'
+                style={!isPending ? styles : { width: 40, height: 34, backgroundColor: 'black' }}
                 onClick={onQuoteRequest}
                 disabled={isPending}
               >
@@ -89,7 +89,7 @@ class QuoteMachine extends Component {
               </button>
               <button
                 id='previous-quote'
-                className='btn btn-default'
+                className='btn'
                 style={styles}
                 onClick={onGetPreviousQuote}
                 disabled={isPending}
